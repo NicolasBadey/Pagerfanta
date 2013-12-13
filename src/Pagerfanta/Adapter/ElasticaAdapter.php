@@ -69,7 +69,7 @@ class ElasticaAdapter implements AdapterInterface
     /**
      * {@inheritdoc}
      */
-    protected function getSlice($offset, $length)
+    public function getSlice($offset, $length)
     {
         $offset = (integer) $offset;
         $length = (integer) $length;
